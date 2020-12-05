@@ -1,11 +1,11 @@
 #! /bin/bash
 
 export PYTHONUNBUFFERED=0
-python style.py --style images/aldunate.jpg \
-  --checkpoint-dir checkpoints/ \
-  --model-dir models/ \
-  --test images/violetaparra.jpg \
-  --test-dir tests/ \
+python style.py --style /storage/datasets/styles/picasso1.jpg \
+  --checkpoint-dir /storage/checkpoints \
+  --model-dir /storage/checkpoints \
+  --test /storage/datasets/styles/TarekHeadshot.jpeg \
+  --test-dir /storage/samples \
   --content-weight 1.5e1 \
   --checkpoint-iterations 1000 \
   --batch-size 20
